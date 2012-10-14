@@ -139,7 +139,9 @@ input[type="submit"]{
 
 #video img{
 	padding-right: 10px;
+    border: 0;
 }
+
 
 #video-meta{
     font-size:12px;
