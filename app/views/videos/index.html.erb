@@ -1,0 +1,16 @@
+<article>
+	<header><h2>Youtube Video ID</h2></header>
+	<%= form_tag search_videos_path,  class: "content", method: :get, remote: true do %>
+	  <%= text_field_tag :id, "cGdCI2HhfAU", placeholder: "video id" %>
+	  <%= submit_tag "Submit" %>
+	<% end %>
+</article>
+
+<article id="video">
+	<header><h2></h2></header>
+	<div class="content">
+		<a target="_blank" alt="Click to watch"><img /></a>
+		<div id="video-meta"></div>
+		<p id="video-description"></p>
+	</div>
+</article>

@@ -1,0 +1,159 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+
+body {
+    background: #d3d3d3;
+    font-family: Helvetica, Tahoma, sans-serif;
+    color: #555;
+    font-size: 13px;
+    margin: 0 auto;
+    position:relative;
+	width:700px;
+    line-height: 1.8em;
+}
+
+article, header{ 
+    display: block;
+}
+
+article, .error_messages{ 
+    margin: 40px 0;
+    min-height: 150px;
+    background-color: #FDFDFD;
+    border-radius: 0.75em; -webkit-border-radius: 0.75em; -moz-border-radius: 0.75em;
+    box-shadow: 0px 0px 0px 10px #C9C9C9; -webkit-box-shadow: 0px 0px 0px 10px #C9C9C9; -moz-box-shadow: 0px 0px 0px 10px #C9C9C9;
+}
+
+article{
+    min-height: inherit;
+    padding-bottom: 10px;
+}
+
+.content{
+    padding: 10px;
+}
+
+
+header {
+    padding:10px;
+    box-shadow: 0px 0px 10px 0px black; -webkit-box-shadow: 0px 0px 10px 0px black; -moz-box-shadow: 0px 0px 10px 0px black;
+    box-shadow: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.1em;
+    border-radius: 5px 5px 0 0;
+    background: #FAFAFA;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZhZmFmYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #FAFAFA 0%, #EEE 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#EEE));
+    background: -webkit-linear-gradient(top, #FAFAFA 0%,#EEE 100%);
+    background: -o-linear-gradient(top, #FAFAFA 0%,#EEE 100%);
+    background: -ms-linear-gradient(top, #FAFAFA 0%,#EEE 100%);
+    background: linear-gradient(top, #FAFAFA 0%,#EEE 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#eeeeee',GradientType=0 );
+
+}
+
+
+header h2{
+    margin:0 5px;
+    font-size:15px;
+    float: left;
+}
+
+
+/************************************************************************************************/
+/* FORM */
+
+
+form{
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    width: 90%;
+    text-align: center;
+}
+
+input {
+    font-size: 1em;
+    width: 40%;
+    -moz-box-sizing: content-box;
+    border: 1px solid #b9bcbe;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    padding: 10px;
+}
+
+input[type="submit"]{
+    background: #cae285;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NhZTI4NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ZGM5NTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #cae285 0%, #9dc954 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cae285), color-stop(100%,#9dc954));
+    background: -webkit-linear-gradient(top,  #cae285 0%,#9dc954 100%);
+    background: -o-linear-gradient(top,  #cae285 0%,#9dc954 100%);
+    background: -ms-linear-gradient(top,  #cae285 0%,#9dc954 100%);
+    background: linear-gradient(top,  #cae285 0%,#9dc954 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cae285', endColorstr='#9dc954',GradientType=0 );
+    text-shadow: 0 1px rgba(255,255,255,0.5);
+    width: 15%;
+    text-align: center
+}
+
+.error_bubble {
+    position: absolute;
+    left: -200px;
+    width: 150px;
+}
+
+.error_bubble p {
+    position: absolute;
+    width: 108px;
+    text-align: center;
+    color: #d44949;
+    background: #fcffea;
+    padding: 20px;
+    border: 1px solid #b9bcbe;
+    box-shadow: 2px 2px 5px #aaa;
+    border-radius: 2px;
+    margin: 0;
+}
+
+.error_bubble span {
+    position: absolute;
+    right: -10px;
+    top: 15px;
+    width: 11px;
+    height: 19px;
+}
+
+/************************************************************************************************/
+/* VIDEO */
+#video{
+	display:none;
+}
+
+#video img{
+	padding-right: 10px;
+}
+
+#video-meta{
+    font-size:12px;
+}
+
+
+/************************************************************************************************/
+/* clearfix */
+header:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+

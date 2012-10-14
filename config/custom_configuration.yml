@@ -1,0 +1,3 @@
+youtube_app:
+  video:
+    url: "http://gdata.youtube.com/feeds/api/videos/%{id}?v=2&alt=jsonc&callback=youtubeFeedCallback&prettyprint=true"
